@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.9;
+pragma solidity ^0.8.20;
 
 contract SimpleCheck {
-    uint public value;
+    uint private value;
 
     // This function demonstrates `require`
     function setValue(uint _value) public {
@@ -24,4 +24,9 @@ contract SimpleCheck {
         value *= 2;
         assert(value == previousValue * 2); // Assert that the new value is double the previous value
     }
+
+    function getValue() public view returns(uint){
+        return value;
+    }
+
 }
