@@ -34,6 +34,7 @@ git clone https://github.com/sakshammishra112/functions-and-error/blob/main/alph
 - `setValue(uint _value)`: Sets the contract's value to the provided positive integer. It uses require to ensure that the value is greater than 0.
 - `divideValue(uint divisor)`: Returns the result of dividing the stored value by the provided divisor. If the divisor is zero, it uses revert to halt execution and revert the transaction.
 - `doubleValue()`: Doubles the stored value. Uses assert to ensure the value has been correctly doubled.
+- `getValue()` : Returns the value stored in the variable.
 
 ## Help
 If you encounter any issues or have questions about using the smart contract, please contact [sakshammishra112@gmial.com].
